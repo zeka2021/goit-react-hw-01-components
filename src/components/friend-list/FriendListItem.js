@@ -1,4 +1,6 @@
-export default function FriendListItem( { avatar, name, isOnLine } ) {
+import PropTypes from 'prop-types';
+
+export default function FriendListItem({ avatar, name, isOnLine }) {
     return (
     <li className="item">
     <span  className="status"></span>
@@ -6,4 +8,10 @@ export default function FriendListItem( { avatar, name, isOnLine } ) {
     <p className="name">{name}</p>
 </li>
 )
-}
+};
+
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool,
+};
