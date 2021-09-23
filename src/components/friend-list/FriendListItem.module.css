@@ -38,11 +38,11 @@
 .active {
   composes: status;
 
-  background-color: green;
+  background-color: rgb(96, 179, 182);
 }
 
 .offLine {
   composes: status;
 
-  background-color: red;
+  background-color: rgb(212, 117, 117);
 }

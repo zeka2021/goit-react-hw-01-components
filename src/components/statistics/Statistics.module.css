@@ -14,16 +14,16 @@
 .statList {
   display: flex;
   align-items: center;
+  background-color: rgb(211, 216, 224);
 }
 
 .item {
   display: flex;
   flex-basis: calc(100% / 5);
   flex-direction: column;
-
   padding: 15px;
-
   color: grey;
+  background-color: rgb(245, 231, 226);
 }
 
 .percentage {
