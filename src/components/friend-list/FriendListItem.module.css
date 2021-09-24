@@ -12,11 +12,9 @@
 
 .status {
   display: inline-block;
-
   width: 20px;
   height: 20px;
   margin-right: 15px;
-
   border-radius: 50%;
   background-color: #000;
 }
@@ -25,7 +23,6 @@
   width: 125px;
   height: 125px;
   margin-right: 15px;
-
   border-radius: 5px;
   background-color: grey;
 }
@@ -37,12 +34,10 @@
 
 .active {
   composes: status;
-
   background-color: rgb(96, 179, 182);
 }
 
 .offLine {
   composes: status;
-
   background-color: rgb(212, 117, 117);
 }
