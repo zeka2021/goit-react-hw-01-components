@@ -10,17 +10,18 @@ import friends from './friends.json';
 import transactions from './transactions.json';
 
 export default function App() {
-    return <div>
-       <Profile
+  return (
+    <div>
+      <Profile
         name={userInfo.name}
         tag={userInfo.tag}
         location={userInfo.location}
         avatar={userInfo.avatar}
         stats={userInfo.stats}
-        />
-        <Statistics stats={statisticalData} />
-        <FriendList>
-          {friends.map(friend => (
+      />
+      <Statistics stats={statisticalData} />
+      <FriendList>
+        {friends.map(friend => (
           <FriendListItem
             key={friend.id}
             avatar={friend.avatar}
@@ -29,8 +30,8 @@ export default function App() {
             id={friend.id}
           />
         ))}
-        </FriendList>
-        <TransactionHistory items={transactions} />;
-    </div>;
-
+      </FriendList>
+      <TransactionHistory items={transactions} />;
+    </div>
+  );
 }
